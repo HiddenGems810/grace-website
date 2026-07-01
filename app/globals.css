@@ -1,26 +1,49 @@
 @import "tailwindcss";
 
+@theme {
+  --color-navy-900: #00172F;
+  --color-navy-850: #031D3B;
+  --color-navy-800: #05244A;
+  --color-navy-700: #08315F;
+  --color-gold-500: #D8A333;
+  --color-gold-400: #E8B84A;
+  --color-gold-300: #F3D27A;
+  --color-gold-dark: #A97514;
+  --color-ivory: #FAF7EF;
+  --color-cream: #F3EBDD;
+  --color-warm-white: #FFFDF8;
+  --color-ink: #071326;
+  --color-text: #172033;
+  --color-muted: #6D7280;
+
+  --color-border-gold: rgba(216, 163, 51, 0.35);
+  --color-navy-overlay: rgba(0, 23, 47, 0.82);
+
+  --font-display: var(--font-display);
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+  --font-script: var(--font-script);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 32px;
+
+  --shadow-soft: 0 18px 60px rgba(0, 23, 47, 0.12);
+  --shadow-gold: 0 18px 45px rgba(216, 163, 51, 0.18);
+  --shadow-navy: 0 24px 80px rgba(0, 23, 47, 0.28);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #FFFDF8;
+  --foreground: #172033;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
