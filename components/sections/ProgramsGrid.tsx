@@ -53,7 +53,7 @@ export function ProgramsGrid() {
                 </div>
                 <h2 className="font-display text-[42px] md:text-[56px] leading-[1.1] text-[var(--color-navy-900)] mb-6">
                   Monthly Residency <br className="hidden md:block" />
-                  <span className="text-[var(--color-navy-900)]" style={{ fontFamily: "var(--font-quote-script)", fontSize: "1.2em", fontWeight: 400 }}>Includes</span>
+                  <span className="text-white" style={{ fontFamily: "var(--font-quote-script)", fontSize: "1.2em", fontWeight: 400 }}>Includes</span>
                 </h2>
                 
                 <p className="font-sans text-[var(--color-navy-900)]/80 text-[16px] md:text-[17px] leading-relaxed mb-10 max-w-md">
@@ -96,23 +96,23 @@ export function ProgramsGrid() {
                         
                         return (
                           <ScrollReveal key={index} y={20}>
-                            <div className="group relative flex items-center gap-6 md:gap-8 p-6 md:p-8 rounded-[24px] bg-white border border-[var(--color-navy-900)]/5 hover:border-[var(--color-navy-900)]/15 transition-all duration-500 overflow-hidden shadow-[0_8px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(0,23,47,0.08)] hover:-translate-y-1">
+                            <div className="group relative flex items-center gap-6 md:gap-8 p-6 md:p-8 rounded-[24px] bg-[var(--color-navy-900)] border border-[var(--color-gold-500)]/20 hover:border-[var(--color-gold-400)]/50 transition-all duration-500 overflow-hidden shadow-[0_8px_30px_rgba(0,23,47,0.15)] hover:shadow-[0_20px_40px_rgba(0,23,47,0.25)] hover:-translate-y-1">
                               
                               {/* Hover Glow */}
                               <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-gold-500)]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                               
                               {/* Giant Background Number */}
-                              <span className="absolute -right-2 -bottom-6 font-display text-[100px] md:text-[140px] font-bold text-[var(--color-gold-500)]/10 group-hover:text-[var(--color-gold-500)]/20 transition-colors duration-500 pointer-events-none select-none">
+                              <span className="absolute -right-2 -bottom-6 font-display text-[100px] md:text-[140px] font-bold text-[var(--color-gold-500)]/5 group-hover:text-[var(--color-gold-500)]/10 transition-colors duration-500 pointer-events-none select-none">
                                 {number}
                               </span>
 
                               {/* Icon Container */}
-                              <div className="relative z-10 flex items-center justify-center w-14 h-14 md:w-16 md:h-16 shrink-0 rounded-2xl bg-[var(--color-navy-900)]/5 border border-[var(--color-navy-900)]/10 text-[var(--color-navy-900)] group-hover:scale-110 group-hover:bg-[var(--color-navy-900)] group-hover:text-[var(--color-gold-400)] shadow-sm transition-all duration-500">
+                              <div className="relative z-10 flex items-center justify-center w-14 h-14 md:w-16 md:h-16 shrink-0 rounded-2xl bg-[var(--color-gold-500)]/10 border border-[var(--color-gold-500)]/20 text-[var(--color-gold-400)] group-hover:scale-110 group-hover:bg-[var(--color-gold-400)] group-hover:text-[var(--color-navy-900)] shadow-sm transition-all duration-500">
                                 <Icon className="w-6 h-6 md:w-7 md:h-7" strokeWidth={1.5} />
                               </div>
 
                               {/* Text */}
-                              <p className="relative z-10 font-sans text-[16px] md:text-[18px] text-[var(--color-navy-900)]/90 font-semibold leading-relaxed group-hover:text-[var(--color-navy-900)] transition-colors duration-300 pr-12">
+                              <p className="relative z-10 font-sans text-[16px] md:text-[18px] text-white/90 font-medium leading-relaxed group-hover:text-white transition-colors duration-300 pr-12">
                                 {program.text}
                               </p>
                             </div>
