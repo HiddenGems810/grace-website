@@ -89,7 +89,7 @@ export function ProgramsGrid() {
                   className="overflow-hidden"
                 >
                   <div className="flex flex-col gap-4 pb-4">
-                    <ScrollReveal isStaggerContainer staggerChildren={0.08}>
+                    <ScrollReveal isStaggerContainer staggerChildren={0.08} className="flex flex-col gap-4">
                       {PROGRAMS.map((program, index) => {
                         const Icon = program.icon;
                         const number = String(index + 1).padStart(2, "0");
