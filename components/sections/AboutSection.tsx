@@ -32,7 +32,7 @@ export function AboutSection() {
             className="w-full h-[120%] -mt-[10%] bg-cover bg-center"
             style={{
               y: yParallax,
-              backgroundImage: "url('/images/about_living_room.png')",
+              backgroundImage: "url('/images/residency_space_diverse.png')",
               backgroundPosition: "center",
               backgroundSize: "cover",
             }}
