@@ -11,8 +11,6 @@ export function FounderSection() {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
     const body = [
-      "This is a test email from TAGDesigns Multimedia Group",
-      "",
       `Name: ${formData.get("name") || ""}`,
       `Phone: ${formData.get("phone") || ""}`,
       `Email: ${formData.get("email") || ""}`,
@@ -96,7 +94,6 @@ export function FounderSection() {
               onSubmit={handleWaitlistSubmit}
               className="w-full space-y-3"
             >
-              <input type="hidden" name="source" defaultValue="This is a test email from TAGDesigns Multimedia Group" />
               <input name="name" required placeholder="Name" className="w-full rounded-[10px] border border-[var(--color-navy-900)]/20 px-4 py-3 text-[14px] text-[var(--color-navy-900)]" />
               <input name="phone" required placeholder="Phone" className="w-full rounded-[10px] border border-[var(--color-navy-900)]/20 px-4 py-3 text-[14px] text-[var(--color-navy-900)]" />
               <input name="email" type="email" placeholder="Email" className="w-full rounded-[10px] border border-[var(--color-navy-900)]/20 px-4 py-3 text-[14px] text-[var(--color-navy-900)]" />

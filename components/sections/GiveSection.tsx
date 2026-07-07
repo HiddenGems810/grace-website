@@ -47,7 +47,7 @@ export function GiveSection() {
                 Amazon Wishlist
               </a>
             </div>
-            <div className="mt-6 flex items-start gap-3 rounded-[14px] border border-[var(--color-border-gold)] bg-[var(--color-warm-white)] px-4 py-3 text-[14px] leading-relaxed text-[var(--color-text)]">
+            <div className="mt-6 flex w-full max-w-[420px] items-start gap-3 rounded-[14px] border border-[var(--color-border-gold)] bg-[var(--color-warm-white)] px-4 py-3 text-[14px] leading-relaxed text-[var(--color-text)]">
               <ShieldCheck className="mt-0.5 h-5 w-5 shrink-0 text-[var(--color-gold-500)]" />
               <span>Choose the giving option that feels most comfortable: a secure online gift, household essentials, or a direct scan-to-support option.</span>
             </div>

@@ -27,14 +27,14 @@ export function Footer() {
           {/* Column 1: Brand */}
           <div className="flex flex-col items-start space-y-6">
             <Logo className="w-[170px] h-[170px]" />
-            <div className="flex items-start gap-3 mt-4 border border-[var(--color-gold-500)]/30 rounded-xl p-4 bg-white/5 backdrop-blur-sm">
+            <div className="flex items-start gap-3 mt-4 w-full max-w-[360px] border border-[var(--color-gold-500)]/30 rounded-xl p-5 bg-white/5 backdrop-blur-sm">
               <Heart className="w-5 h-5 text-[var(--color-gold-400)] mt-1 flex-shrink-0" />
               <div className="flex flex-col">
                 <span className="font-sans text-[11px] text-[var(--color-gold-400)] tracking-widest uppercase font-bold mb-1">
                   Our Promise
                 </span>
-                <span className="font-serif text-[15px] text-white leading-tight">
-                  A safe place. A fresh start. A brighter future.
+                <span className="font-serif text-[17px] text-white leading-tight">
+                  A safe place. A fresh start.<br />A brighter future.
                 </span>
               </div>
             </div>

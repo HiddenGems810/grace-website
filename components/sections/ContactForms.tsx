@@ -50,8 +50,6 @@ function FormCard({
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
     const body = [
-      "This is a test email from TAGDesigns Multimedia Group",
-      "",
       `Name: ${formData.get("name") || ""}`,
       `Phone: ${formData.get("phone") || ""}`,
       `Email: ${formData.get("email") || ""}`,
@@ -67,7 +65,6 @@ function FormCard({
       onSubmit={handleSubmit}
       className="scroll-mt-32 rounded-[14px] border border-[var(--color-gold-500)]/30 bg-white p-6 md:p-8 shadow-[var(--shadow-soft)]"
     >
-      <input type="hidden" name="source" defaultValue="This is a test email from TAGDesigns Multimedia Group" />
       <div className="mb-6 flex items-center gap-4 text-[var(--color-gold-500)]">
         {icon}
         <h2 className="font-display text-[32px] text-[var(--color-navy-900)] leading-tight">{title}</h2>
