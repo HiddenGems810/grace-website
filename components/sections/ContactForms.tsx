@@ -8,7 +8,7 @@ const email = "dominque@grace101ilh.org";
 
 export function ContactForms() {
   return (
-    <section className="bg-[var(--color-warm-white)] py-20 md:py-28">
+    <section id="contact" className="bg-[var(--color-warm-white)] py-20 md:py-28 scroll-mt-32">
       <div className="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
         <FormCard
           id="tour"
