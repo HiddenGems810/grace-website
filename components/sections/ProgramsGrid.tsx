@@ -58,7 +58,7 @@ export function ProgramsGrid() {
                 </h2>
                 
                 <p className="font-sans text-[var(--color-navy-900)]/80 text-[16px] md:text-[17px] leading-relaxed mb-10 max-w-md">
-                  Everything you need to focus on your journey. Our comprehensive monthly residency program is designed to provide a safe, fully-equipped, and supportive environment.
+                  Step into a warm, welcoming home where every detail is taken care of. We provide a safe, fully furnished independent living space surrounded by a compassionate community, giving you the peace of mind to focus on your journey.
                 </p>
 
                 <button 
