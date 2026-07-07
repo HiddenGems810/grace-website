@@ -99,8 +99,8 @@ export function Footer() {
                 <span className="font-sans text-[11px] text-[var(--color-gold-400)] tracking-widest uppercase font-bold mb-1">
                   Our Promise
                 </span>
-                <span className="font-serif text-[17px] text-white leading-tight">
-                  A safe place. A fresh start.<br />A brighter future.
+                <span className="font-serif text-[16px] md:text-[17px] text-white leading-tight">
+                  Grace, Dignity and Support<br />for every New Beginning
                 </span>
               </div>
             </div>
