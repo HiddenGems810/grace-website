@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { 
   BedDouble, 
   Zap, 
@@ -79,9 +80,10 @@ export function ProgramsGrid() {
 
           {/* Right Column - Amenities List */}
           <div className="w-full lg:w-2/3">
-            <AnimatePresence initial={false}>
-              {isExpanded && (
+            <AnimatePresence mode="wait" initial={false}>
+              {isExpanded ? (
                 <motion.div
+                  key="list"
                   initial={{ height: 0, opacity: 0 }}
                   animate={{ height: "auto", opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
@@ -121,6 +123,23 @@ export function ProgramsGrid() {
                       })}
                     </ScrollReveal>
                   </div>
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="image"
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                  className="w-full h-[400px] lg:h-[calc(100vh-200px)] lg:max-h-[800px] rounded-[32px] overflow-hidden relative shadow-[0_20px_40px_rgba(0,23,47,0.15)] border border-[var(--color-navy-900)]/10"
+                >
+                  <Image 
+                    src="/images/about_living_room.png" 
+                    alt="Residency Living Space" 
+                    fill 
+                    className="object-cover hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-navy-900)]/40 to-transparent mix-blend-overlay" />
                 </motion.div>
               )}
             </AnimatePresence>
