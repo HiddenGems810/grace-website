@@ -81,12 +81,12 @@ export function GiveSection() {
                   Scan to Support
                 </h3>
                 
-                <div className="relative w-full max-w-[280px] aspect-square rounded-[24px] overflow-hidden border border-[var(--color-navy-900)]/10 bg-[var(--color-warm-white)] shadow-[0_8px_30px_rgba(0,23,47,0.06)] p-6 group-hover:shadow-[0_20px_40px_rgba(0,23,47,0.12)] transition-all duration-500">
+                <div className="relative w-full max-w-[360px] aspect-square rounded-[24px] overflow-hidden border border-[var(--color-navy-900)]/10 bg-[var(--color-warm-white)] shadow-[0_8px_30px_rgba(0,23,47,0.06)] p-2 sm:p-4 group-hover:shadow-[0_20px_40px_rgba(0,23,47,0.12)] transition-all duration-500">
                   <Image
                     src="/images/zelle-qr.png"
                     alt="Send Money with Zelle QR Code"
                     fill
-                    className="object-contain p-4 mix-blend-multiply group-hover:scale-105 transition-transform duration-700 ease-out"
+                    className="object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                 </div>
                 
