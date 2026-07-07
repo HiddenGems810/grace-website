@@ -60,9 +60,14 @@ export function FounderSection() {
               Founder & Executive Director
             </p>
 
-            <p className="font-sans text-[15px] md:text-[16px] text-white/85 leading-[1.7] mb-8">
-              Dominque has a heart for uplifting others and a passion for creating a safe space where women feel supported, valued, and encouraged. Her vision is rooted in compassion, grace, and the belief that every woman deserves the opportunity to rediscover her strength, embrace new possibilities, and build a brighter future.
-            </p>
+            <div className="flex flex-col space-y-5 mb-8">
+              <p className="font-sans text-[15px] md:text-[16px] text-white/85 leading-[1.7]">
+                Dominque Brown is the Founder and Executive Director of Grace 101 Independent Living Home. She is passionate about creating safe, supportive spaces where women are treated with compassion, dignity, and grace. A college graduate, church volunteer, and life insurance professional, Dominque has dedicated her life to encouraging others and helping families build stronger futures.
+              </p>
+              <p className="font-sans text-[15px] md:text-[16px] text-white/85 leading-[1.7]">
+                Grace 101 was founded from her desire to provide more than housing—it was created to offer hope, stability, and encouragement for women as they move toward independence. Her vision is to ensure every resident feels welcomed, valued, and empowered to embrace a new beginning.
+              </p>
+            </div>
 
             <blockquote
               className="text-center text-[29px] md:text-[34px] text-[var(--color-gold-400)] leading-[1.28]"
