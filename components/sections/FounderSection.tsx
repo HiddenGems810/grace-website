@@ -20,7 +20,7 @@ export function FounderSection() {
   };
 
   return (
-    <section id="founder" className="scroll-mt-32 bg-[var(--color-warm-white)] pb-24 md:pb-32 overflow-hidden">
+    <section id="founder" className="scroll-mt-32 bg-[var(--color-warm-white)] pt-24 md:pt-32 pb-24 md:pb-32 overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6">
         <div className="flex flex-col lg:flex-row shadow-[var(--shadow-navy)] rounded-2xl overflow-hidden min-h-[500px]">
           <motion.div
