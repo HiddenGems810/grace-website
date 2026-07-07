@@ -21,7 +21,7 @@ export function Hero() {
             loop
             muted
             playsInline
-            className="absolute inset-0 w-full h-full object-cover opacity-50 saturate-125"
+            className="absolute inset-0 w-full h-full object-cover object-center opacity-70 lg:opacity-50 saturate-125"
           >
             <source src="/videos/porch-women-bg.mp4" type="video/mp4" />
           </video>
@@ -34,7 +34,7 @@ export function Hero() {
         </div>
         
         {/* Mobile/Tablet global overlay (hidden on desktop because the left edge gradient handles it) */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-navy-900)]/80 via-[var(--color-navy-900)]/60 to-[var(--color-navy-900)]/90 lg:hidden pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-navy-900)]/70 via-[var(--color-navy-900)]/45 to-[var(--color-navy-900)]/85 lg:hidden pointer-events-none" />
       </div>
 
       <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10 pb-16 lg:pb-0">
