@@ -103,6 +103,7 @@ export function Footer() {
                   A safe place. A fresh start.<br />A brighter future.
                 </span>
               </div>
+            </div>
           </div>
         </div>
 
