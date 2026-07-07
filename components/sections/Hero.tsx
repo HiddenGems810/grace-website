@@ -41,8 +41,8 @@ export function Hero() {
         <ScrollReveal isStaggerContainer className="max-w-[650px]">
           <ScrollReveal y={30} duration={0.8}>
             <h1 className="font-display font-medium text-[38px] leading-[0.95] md:text-[56px] lg:text-[76px] xl:text-[88px] tracking-[-0.035em] mb-6">
-              <span className="block text-white">Where <span className="text-[var(--color-gold-500)]">Grace</span></span>
-              <span className="block text-white italic pr-4">Meets New <span className="text-[var(--color-gold-500)]">Beginnings.</span></span>
+              <span className="block text-white">Where <span className="text-[var(--color-gold-500)]" style={{ fontFamily: "var(--font-quote-script)", fontSize: "1.2em", fontWeight: 400 }}>Grace</span></span>
+              <span className="block text-white pr-4"><span className="italic">Meets New</span> <span className="text-[var(--color-gold-500)]" style={{ fontFamily: "var(--font-quote-script)", fontSize: "1.2em", fontWeight: 400, fontStyle: "normal" }}>Beginnings.</span></span>
             </h1>
           </ScrollReveal>
 
