@@ -58,7 +58,7 @@ export function ProgramsGrid() {
                 </h2>
                 
                 <p className="font-sans text-[var(--color-navy-900)]/80 text-[16px] md:text-[17px] leading-relaxed mb-10 max-w-md">
-                  Step into a warm, welcoming home where every detail is taken care of. We provide a safe, fully furnished independent living space surrounded by a compassionate community, giving you the peace of mind to focus on your journey.
+                  Step into a warm, welcoming home designed to support your independence. We provide a safe, fully furnished living space surrounded by a compassionate community, offering the stability you need to focus entirely on your personal journey.
                 </p>
 
                 <button 
