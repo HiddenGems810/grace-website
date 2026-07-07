@@ -90,7 +90,7 @@ export function Footer() {
               className="text-[24px] md:text-[28px] text-[var(--color-gold-400)] leading-[1.28] text-center"
               style={{ fontFamily: "var(--font-quote-script)" }}
             >
-              &quot;Grace reminds every woman that her past may shape her story, but it never has to define her future.&quot;
+              &quot;Grace reminds every woman<br />that her past may shape her story,<br />but it never has to define her future.&quot;
             </blockquote>
 
             <div className="flex items-start gap-3 w-full max-w-[360px] border border-[var(--color-gold-500)]/30 rounded-xl p-5 bg-white/5 backdrop-blur-sm">
