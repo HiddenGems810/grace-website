@@ -27,17 +27,6 @@ export function Footer() {
           {/* Column 1: Brand */}
           <div className="flex flex-col items-start space-y-6">
             <Logo className="w-[170px] h-[170px]" />
-            <div className="flex items-start gap-3 mt-4 w-full max-w-[360px] border border-[var(--color-gold-500)]/30 rounded-xl p-5 bg-white/5 backdrop-blur-sm">
-              <Heart className="w-5 h-5 text-[var(--color-gold-400)] mt-1 flex-shrink-0" />
-              <div className="flex flex-col">
-                <span className="font-sans text-[11px] text-[var(--color-gold-400)] tracking-widest uppercase font-bold mb-1">
-                  Our Promise
-                </span>
-                <span className="font-serif text-[17px] text-white leading-tight">
-                  A safe place. A fresh start.<br />A brighter future.
-                </span>
-              </div>
-            </div>
           </div>
 
           {/* Column 2: Navigation */}
@@ -80,9 +69,9 @@ export function Footer() {
             </div>
             
             {/* Popl Digital Business Card */}
-            <div className="pt-2 flex flex-col items-start gap-3">
-              <span className="font-sans text-[11px] text-[var(--color-gold-400)] tracking-widest uppercase font-bold">
-                Digital Business Card
+            <div className="pt-2 flex flex-col items-center justify-center gap-3 w-full max-w-[200px] mx-auto md:mx-0">
+              <span className="font-sans text-[11px] text-[var(--color-gold-400)] tracking-widest uppercase font-bold text-center">
+                Scan for Digital Business Card
               </span>
               <div className="relative w-28 h-28 bg-white rounded-xl overflow-hidden p-1.5 transition-transform hover:-translate-y-1 duration-300">
                 <Image 
@@ -95,12 +84,27 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Column 4: Newsletter */}
+          {/* Column 4: Quote & Promise */}
           <div className="flex flex-col space-y-6">
-            <h3 className="font-serif text-2xl text-white">Stay Connected</h3>
-            <p className="text-[15px] text-white/70 leading-relaxed">
-              Grace reminds every woman that her past may shape her story, but it never has to define her future.
-            </p>
+            <blockquote
+              className="text-[24px] md:text-[28px] text-[var(--color-gold-400)] leading-[1.28]"
+              style={{ fontFamily: "var(--font-quote-script)" }}
+            >
+              &quot;Grace reminds every woman that her past may shape her story, but it never has to define her future.&quot;
+            </blockquote>
+
+            <div className="flex items-start gap-3 w-full max-w-[360px] border border-[var(--color-gold-500)]/30 rounded-xl p-5 bg-white/5 backdrop-blur-sm">
+              <Heart className="w-5 h-5 text-[var(--color-gold-400)] mt-1 flex-shrink-0" />
+              <div className="flex flex-col">
+                <span className="font-sans text-[11px] text-[var(--color-gold-400)] tracking-widest uppercase font-bold mb-1">
+                  Our Promise
+                </span>
+                <span className="font-serif text-[17px] text-white leading-tight">
+                  A safe place. A fresh start.<br />A brighter future.
+                </span>
+              </div>
+            </div>
+
             <a href="mailto:dominque@grace101ilh.org" className="w-full bg-[var(--color-gold-500)] hover:bg-[var(--color-gold-400)] text-[var(--color-navy-900)] font-bold text-[13px] tracking-widest uppercase rounded-full py-3 text-center transition-colors duration-300">
               Contact Grace 101
             </a>
