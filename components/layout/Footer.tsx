@@ -102,7 +102,7 @@ export function Footer() {
                   Our Promise
                 </span>
                 <span className="font-serif text-[16px] md:text-[17px] text-white leading-tight">
-                  Grace, Dignity and Support<br className="hidden md:block" /> for every New Beginning
+                  Grace, Dignity and Support<br className="hidden md:block" /> for Every New Beginning
                 </span>
               </div>
             </div>
