@@ -65,7 +65,7 @@ export function AboutSection() {
 
             <ScrollReveal y={20}>
               <h2 className="font-display text-[42px] md:text-[56px] lg:text-[64px] text-[var(--color-navy-900)] leading-[1.05] mb-8 tracking-[-0.02em]">
-                A Safe Place <br className="hidden md:block" /> to <span className="text-[var(--color-gold-500)]" style={{ fontFamily: "var(--font-quote-script)", fontSize: "1.1em", fontWeight: 400 }}>Begin Again</span>
+                A Safe Place <br className="hidden md:block" /> to <span className="text-[var(--color-gold-500)] tracking-normal" style={{ fontFamily: "var(--font-quote-script)", fontSize: "1.1em", fontWeight: 400 }}>Begin Again</span>
               </h2>
             </ScrollReveal>
 
