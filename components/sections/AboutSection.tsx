@@ -70,12 +70,14 @@ export function AboutSection() {
             </ScrollReveal>
 
             <ScrollReveal y={20}>
-              <div className="pl-6 md:pl-8 border-l-2 border-[var(--color-gold-400)]/40 mb-10">
+              <div className="pl-6 md:pl-8 border-l-2 border-[var(--color-gold-400)]/40 mb-10 flex flex-col space-y-4">
                 <p className="font-sans text-[16px] md:text-[18px] text-[var(--color-text)] leading-[1.8] text-pretty">
                   At <span className="font-script text-[32px] text-[var(--color-gold-500)] leading-none align-middle mx-1">Grace</span> 101 Independent Living Home, we believe every woman deserves a safe, supportive place to grow.
-                  <br /><br />
+                </p>
+                <p className="font-sans text-[16px] md:text-[18px] text-[var(--color-text)] leading-[1.8] text-pretty">
                   Our home provides a stable environment where women can build confidence, strengthen life skills, and move toward independence.
-                  <br /><br />
+                </p>
+                <p className="font-sans text-[16px] md:text-[18px] text-[var(--color-text)] leading-[1.8] text-pretty">
                   With <span className="font-script text-[32px] text-[var(--color-gold-500)] leading-none align-middle mx-1">grace</span>, support, and opportunity, every new beginning starts here.
                 </p>
               </div>
