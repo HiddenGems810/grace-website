@@ -88,7 +88,7 @@ export function ProgramsGrid() {
               }`}
             >
               <Image 
-                src="/images/about_living_room.png" 
+                src="/images/residency_space.png" 
                 alt="Residency Living Space" 
                 fill 
                 className="object-cover"
