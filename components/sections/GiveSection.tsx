@@ -43,7 +43,7 @@ export function GiveSection() {
                 <Heart className="w-5 h-5" />
                 Donate Now
               </a>
-              <a href="#amazon-wishlist-link-needed" className="inline-flex w-full sm:w-auto items-center justify-center gap-2 px-6 py-3.5 rounded-[14px] font-sans font-semibold text-[15px] md:text-[16px] tracking-wide bg-transparent border border-[var(--color-border-gold)] text-[var(--color-navy-900)] hover:border-[var(--color-gold-400)] hover:bg-[var(--color-warm-white)] transition-all duration-300">
+              <a href="https://www.amazon.com/registries/gl/guest-view/3TKG27SEMJBD8?ref_=cm_sw_r_mwn_ggr-subnav-share_BPQF7FCG9BBV90GXGSNH&language=en-US" className="inline-flex w-full sm:w-auto items-center justify-center gap-2 px-6 py-3.5 rounded-[14px] font-sans font-semibold text-[15px] md:text-[16px] tracking-wide bg-transparent border border-[var(--color-border-gold)] text-[var(--color-navy-900)] hover:border-[var(--color-gold-400)] hover:bg-[var(--color-warm-white)] transition-all duration-300">
                 <Gift className="w-5 h-5" />
                 Amazon Wishlist
               </a>
