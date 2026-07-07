@@ -54,11 +54,11 @@ export function AboutSection() {
 
           <ScrollReveal y={20}>
             <p className="font-sans text-[16px] md:text-[18px] text-[var(--color-text)] leading-[1.65] mb-10 max-w-[560px]">
-              At <span className="font-script text-[30px] text-[var(--color-gold-500)]">Grace</span> 101 Independent Living Home, we believe every woman deserves more than a place to stay-she deserves a place to grow.
+              At <span className="font-script text-[30px] text-[var(--color-gold-500)]">Grace</span> 101 Independent Living Home, we believe every woman deserves a safe, supportive place to grow.
               <br /><br />
-              We provide a safe, stable, and supportive environment where women can rebuild with confidence, develop essential life skills, and move toward lasting independence.
+              Our home provides a stable environment where women can build confidence, strengthen life skills, and move toward independence.
               <br /><br />
-              At <span className="font-script text-[30px] text-[var(--color-gold-500)]">Grace</span> 101, we believe healing begins with stability, growth begins with opportunity, and every new beginning deserves a foundation built on <span className="font-script text-[30px] text-[var(--color-gold-500)]">grace</span>.
+              With <span className="font-script text-[30px] text-[var(--color-gold-500)]">grace</span>, support, and opportunity, every new beginning starts here.
             </p>
           </ScrollReveal>
 
