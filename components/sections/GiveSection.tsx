@@ -34,7 +34,7 @@ export function GiveSection() {
 
           <ScrollReveal y={20}>
             <p className="font-sans text-white/80 text-[16px] md:text-[17px] leading-relaxed mb-10 max-w-[560px] mx-auto lg:mx-0">
-              Grace 101 operates on the generosity of our community. Every gift makes a difference. Your financial support, donated household essentials, and volunteer time help provide women with a safe, fully furnished home, supportive resources, and the opportunity to build a brighter future.
+              Grace 101 operates on the generosity of our community. Every gift makes a difference. Your financial support, donated household essentials, and volunteer time help provide women with a safe, fully furnished home, supportive resources, and the opportunity to build a&nbsp;brighter&nbsp;future.
             </p>
           </ScrollReveal>
 
