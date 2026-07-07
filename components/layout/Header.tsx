@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { Calendar, Menu, X } from "lucide-react";
+import { Menu, Phone, X } from "lucide-react";
 import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
@@ -13,7 +13,6 @@ const NAV_LINKS = [
   { name: "ABOUT", href: "#about" },
   { name: "MISSION", href: "#mission" },
   { name: "PROGRAMS", href: "#programs" },
-  { name: "SCHEDULE A TOUR", href: "#tour" },
   { name: "WAYS TO GIVE", href: "#give" },
   { name: "CONTACT", href: "#contact" },
 ];
@@ -49,7 +48,7 @@ export function Header() {
         {/* Left: Logo */}
         <Link href="#" className="flex-shrink-0 z-50">
           <Logo 
-            className="w-[45px] h-[45px] md:w-[55px] md:h-[55px] transition-transform duration-300 hover:scale-105" 
+            className="w-[82px] h-[82px] md:w-[100px] md:h-[100px] transition-transform duration-300 hover:scale-105" 
           />
         </Link>
 
@@ -88,13 +87,14 @@ export function Header() {
         <div className="flex items-center gap-4 z-50">
           <Button
             variant="primary"
-            icon={<Calendar className="w-[18px] h-[18px]" />}
+            icon={<Phone className="w-[18px] h-[18px]" />}
             className={cn(
               "hidden lg:inline-flex transition-all duration-300",
               isScrolled ? "py-2.5 px-5 text-[14px] rounded-full" : ""
             )}
+            onClick={() => window.location.href = "tel:+13468808696"}
           >
-            Schedule a Tour
+            Call Today 346.880.8696
           </Button>
 
           <button
@@ -143,11 +143,14 @@ export function Header() {
             >
               <Button
                 variant="primary"
-                icon={<Calendar className="w-5 h-5" />}
+                icon={<Phone className="w-5 h-5" />}
                 className="w-full max-w-[300px] rounded-full shadow-[0_0_20px_rgba(216,163,51,0.4)]"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  window.location.href = "tel:+13468808696";
+                }}
               >
-                Schedule a Tour
+                Call Today 346.880.8696
               </Button>
             </motion.div>
           </motion.div>

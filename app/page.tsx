@@ -6,6 +6,7 @@ import { MissionBand } from "@/components/sections/MissionBand";
 import { ProgramsGrid } from "@/components/sections/ProgramsGrid";
 import { FounderSection } from "@/components/sections/FounderSection";
 import { GiveSection } from "@/components/sections/GiveSection";
+import { ContactForms } from "@/components/sections/ContactForms";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <ProgramsGrid />
         <FounderSection />
         <GiveSection />
+        <ContactForms />
       </div>
 
       <Footer />

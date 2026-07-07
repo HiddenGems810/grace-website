@@ -7,7 +7,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 export function Hero() {
   return (
-    <section className="relative w-full h-auto min-h-[100vh] lg:min-h-[680px] flex items-center pt-[100px] overflow-hidden bg-[var(--color-navy-900)]">
+    <section className="relative w-full h-auto min-h-[100vh] lg:min-h-[720px] flex items-center pt-[150px] md:pt-[170px] lg:pt-[130px] overflow-hidden bg-[var(--color-navy-900)]">
       {/* Background Image Container */}
       <div className="absolute inset-0 z-0 flex justify-end">
         {/* The image container is constrained to the right 65% on desktop */}
@@ -21,7 +21,7 @@ export function Hero() {
             loop
             muted
             playsInline
-            className="absolute inset-0 w-full h-full object-cover opacity-30 grayscale saturate-50"
+            className="absolute inset-0 w-full h-full object-cover opacity-50 saturate-125"
           >
             <source src="/videos/porch-women-bg.mp4" type="video/mp4" />
           </video>
@@ -37,27 +37,27 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-navy-900)]/80 via-[var(--color-navy-900)]/60 to-[var(--color-navy-900)]/90 lg:hidden pointer-events-none" />
       </div>
 
-      <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10 py-16 lg:py-0">
+      <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10 pb-16 lg:pb-0">
         <ScrollReveal isStaggerContainer className="max-w-[650px]">
           <ScrollReveal y={30} duration={0.8}>
             <h1 className="font-display font-medium text-[38px] leading-[0.95] md:text-[56px] lg:text-[76px] xl:text-[88px] tracking-[-0.035em] mb-6">
-              <span className="block text-white">Where Grace</span>
-              <span className="block text-[var(--color-gold-500)] italic pr-4">Meets New Beginnings.</span>
+              <span className="block text-white">Where <span className="text-[var(--color-gold-500)]">Grace</span></span>
+              <span className="block text-white italic pr-4">Meets New <span className="text-[var(--color-gold-500)]">Beginnings.</span></span>
             </h1>
           </ScrollReveal>
 
           <ScrollReveal y={20} delay={0.15} duration={0.8}>
             <p className="font-sans text-[15px] md:text-[18px] text-[var(--color-ivory)]/90 leading-[1.65] max-w-[540px] mb-10">
-              Grace 101 Independent Living Home provides safe, supportive housing and life-enriching opportunities for women rebuilding their lives with dignity, stability, and hope.
+              Grace 101 provides safe, stable, and affordable housing where women can rebuild with confidence, discover their strength, and create a brighter future.
             </p>
           </ScrollReveal>
 
           <ScrollReveal y={20} delay={0.25} duration={0.8}>
             <div className="flex flex-col sm:flex-row items-center gap-4">
-              <Button variant="primary" icon={<Calendar className="w-5 h-5" />} className="w-full sm:w-auto">
+              <Button variant="primary" icon={<Calendar className="w-5 h-5" />} className="w-full sm:w-auto" onClick={() => document.getElementById("tour")?.scrollIntoView({ behavior: "smooth" })}>
                 Schedule a Tour
               </Button>
-              <Button variant="secondary" icon={<Heart className="w-5 h-5" />} className="w-full sm:w-auto !text-white !border-white/40 hover:!border-[var(--color-gold-400)] hover:!text-[var(--color-navy-900)]">
+              <Button variant="secondary" icon={<Heart className="w-5 h-5" />} className="w-full sm:w-auto !text-white !border-white/40 hover:!border-[var(--color-gold-400)] hover:!text-[var(--color-navy-900)]" onClick={() => document.getElementById("partner")?.scrollIntoView({ behavior: "smooth" })}>
                 Become a Partner
               </Button>
             </div>

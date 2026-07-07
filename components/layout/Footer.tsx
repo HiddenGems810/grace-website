@@ -26,7 +26,7 @@ export function Footer() {
           
           {/* Column 1: Brand */}
           <div className="flex flex-col items-start space-y-6">
-            <Logo className="w-[120px] h-[120px]" />
+            <Logo className="w-[170px] h-[170px]" />
             <div className="flex items-start gap-3 mt-4 border border-[var(--color-gold-500)]/30 rounded-xl p-4 bg-white/5 backdrop-blur-sm">
               <Heart className="w-5 h-5 text-[var(--color-gold-400)] mt-1 flex-shrink-0" />
               <div className="flex flex-col">
@@ -34,7 +34,7 @@ export function Footer() {
                   Our Promise
                 </span>
                 <span className="font-serif text-[15px] text-white leading-tight">
-                  Where Grace Meets New Beginnings.
+                  A safe place. A fresh start. A brighter future.
                 </span>
               </div>
             </div>
@@ -63,15 +63,19 @@ export function Footer() {
             <div className="flex flex-col space-y-4 text-[15px] text-white/70">
               <a href="#" className="flex items-start gap-3 hover:text-white transition-colors">
                 <MapPin className="w-5 h-5 text-[var(--color-gold-400)] shrink-0" />
-                <span>123 Grace Avenue, Suite 101<br />Cityville, ST 12345</span>
+                <span>P.O. Box 60194<br />Houston, TX 77205</span>
               </a>
-              <a href="tel:+1234567890" className="flex items-center gap-3 hover:text-white transition-colors">
+              <a href="tel:+13468808696" className="flex items-center gap-3 hover:text-white transition-colors">
                 <Phone className="w-5 h-5 text-[var(--color-gold-400)] shrink-0" />
-                <span>(123) 456-7890</span>
+                <span>346.880.8696</span>
               </a>
-              <a href="mailto:hello@grace101.com" className="flex items-center gap-3 hover:text-white transition-colors">
+              <a href="mailto:dominque@grace101ilh.org" className="flex items-center gap-3 hover:text-white transition-colors">
                 <Mail className="w-5 h-5 text-[var(--color-gold-400)] shrink-0" />
-                <span>hello@grace101.com</span>
+                <span>dominque@grace101ilh.org</span>
+              </a>
+              <a href="https://grace101ilh.org" className="flex items-center gap-3 hover:text-white transition-colors">
+                <Home className="w-5 h-5 text-[var(--color-gold-400)] shrink-0" />
+                <span>grace101ilh.org</span>
               </a>
             </div>
             
@@ -95,20 +99,11 @@ export function Footer() {
           <div className="flex flex-col space-y-6">
             <h3 className="font-serif text-2xl text-white">Stay Connected</h3>
             <p className="text-[15px] text-white/70 leading-relaxed">
-              Join our mailing list for updates on our community and ways to support our mission.
+              Grace reminds every woman that her past may shape her story, but it never has to define her future.
             </p>
-            <form className="flex flex-col gap-3 mt-2" onSubmit={(e) => e.preventDefault()}>
-              <div className="relative">
-                <input 
-                  type="email" 
-                  placeholder="Your email address" 
-                  className="w-full bg-white/5 border border-white/10 rounded-full px-5 py-3 text-[14px] text-white placeholder:text-white/40 focus:outline-none focus:border-[var(--color-gold-400)]/50 transition-colors"
-                />
-              </div>
-              <button className="w-full bg-[var(--color-gold-500)] hover:bg-[var(--color-gold-400)] text-[var(--color-navy-900)] font-bold text-[13px] tracking-widest uppercase rounded-full py-3 transition-colors duration-300">
-                Subscribe
-              </button>
-            </form>
+            <a href="mailto:dominque@grace101ilh.org" className="w-full bg-[var(--color-gold-500)] hover:bg-[var(--color-gold-400)] text-[var(--color-navy-900)] font-bold text-[13px] tracking-widest uppercase rounded-full py-3 text-center transition-colors duration-300">
+              Contact Grace 101
+            </a>
           </div>
         </div>
 
