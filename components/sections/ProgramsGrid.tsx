@@ -32,7 +32,7 @@ const PROGRAMS = [
 ];
 
 export function ProgramsGrid() {
-  const [isExpanded, setIsExpanded] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   return (
     <section id="programs" className="py-24 md:py-32 bg-[var(--color-gold-400)] relative overflow-hidden">
@@ -78,17 +78,33 @@ export function ProgramsGrid() {
             </div>
           </div>
 
-          {/* Right Column - Amenities List */}
-          <div className="w-full lg:w-2/3">
-            <AnimatePresence mode="wait" initial={false}>
-              {isExpanded ? (
+          {/* Right Column - Amenities List & Image */}
+          <div className="w-full lg:w-2/3 relative min-h-[400px] lg:min-h-[600px]">
+            
+            {/* The Image (Fades out when expanded) */}
+            <div 
+              className={`absolute inset-0 rounded-[32px] overflow-hidden shadow-[0_20px_40px_rgba(0,23,47,0.15)] border border-[var(--color-navy-900)]/10 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                isExpanded ? 'opacity-0 scale-95 pointer-events-none' : 'opacity-100 scale-100'
+              }`}
+            >
+              <Image 
+                src="/images/about_living_room.png" 
+                alt="Residency Living Space" 
+                fill 
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-navy-900)]/40 to-transparent mix-blend-overlay" />
+            </div>
+
+            {/* The Amenities List */}
+            <AnimatePresence initial={false}>
+              {isExpanded && (
                 <motion.div
-                  key="list"
                   initial={{ height: 0, opacity: 0 }}
                   animate={{ height: "auto", opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                  className="overflow-hidden"
+                  transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+                  className="overflow-hidden relative z-10"
                 >
                   <div className="flex flex-col gap-4 pb-4">
                     <ScrollReveal isStaggerContainer staggerChildren={0.08} className="flex flex-col gap-4">
@@ -123,23 +139,6 @@ export function ProgramsGrid() {
                       })}
                     </ScrollReveal>
                   </div>
-                </motion.div>
-              ) : (
-                <motion.div
-                  key="image"
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.95 }}
-                  transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                  className="w-full h-[400px] lg:h-[calc(100vh-200px)] lg:max-h-[800px] rounded-[32px] overflow-hidden relative shadow-[0_20px_40px_rgba(0,23,47,0.15)] border border-[var(--color-navy-900)]/10"
-                >
-                  <Image 
-                    src="/images/about_living_room.png" 
-                    alt="Residency Living Space" 
-                    fill 
-                    className="object-cover hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-navy-900)]/40 to-transparent mix-blend-overlay" />
                 </motion.div>
               )}
             </AnimatePresence>
