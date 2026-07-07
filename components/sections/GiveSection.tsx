@@ -8,7 +8,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 export function GiveSection() {
   return (
-    <section id="give" className="py-24 md:py-32 bg-white relative overflow-hidden">
+    <section id="give" className="py-24 md:py-32 bg-white relative overflow-hidden scroll-mt-32">
       <div
         className="absolute inset-0 opacity-[0.03] pointer-events-none"
         style={{

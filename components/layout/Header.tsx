@@ -22,6 +22,21 @@ export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
+  const scrollToHref = (href: string) => {
+    if (href === "#") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+
+    document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleNavClick = (event: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    event.preventDefault();
+    setIsMobileMenuOpen(false);
+    window.requestAnimationFrame(() => scrollToHref(href));
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -46,7 +61,7 @@ export function Header() {
         )}
       >
         {/* Left: Logo */}
-        <Link href="#" className="flex-shrink-0 z-50">
+        <Link href="#" className="flex-shrink-0 z-50" onClick={(event) => handleNavClick(event, "#")}>
           <Logo 
             className="w-[82px] h-[82px] md:w-[100px] md:h-[100px] transition-transform duration-300 hover:scale-105" 
           />
@@ -61,6 +76,7 @@ export function Header() {
             <Link
               key={link.name}
               href={link.href}
+              onClick={(event) => handleNavClick(event, link.href)}
               onMouseEnter={() => setHoveredIndex(idx)}
               className={cn(
                 "relative px-4 py-2 text-[12px] font-sans font-bold tracking-[0.16em] transition-colors duration-300 z-10",
@@ -127,7 +143,7 @@ export function Header() {
                 >
                   <Link
                     href={link.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={(event) => handleNavClick(event, link.href)}
                     className="block text-xl font-sans font-bold tracking-[0.1em] text-white border-b border-white/10 pb-4 hover:text-[var(--color-gold-400)] transition-colors hover:translate-x-2 duration-300"
                   >
                     {link.name}

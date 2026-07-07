@@ -15,7 +15,7 @@ export function AboutSection() {
   const yParallax = useTransform(scrollYProgress, [0, 1], [50, -50]);
 
   return (
-    <section id="about" ref={containerRef} className="py-24 md:py-32 bg-[var(--color-warm-white)] relative overflow-hidden">
+    <section id="about" ref={containerRef} className="py-24 md:py-32 bg-[var(--color-warm-white)] relative overflow-hidden scroll-mt-32">
       <div
         className="absolute right-[-10%] top-[10%] w-[500px] h-[500px] bg-no-repeat opacity-20 pointer-events-none"
         style={{

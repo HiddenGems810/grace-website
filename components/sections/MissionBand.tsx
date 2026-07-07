@@ -6,7 +6,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 export function MissionBand() {
   return (
-    <section id="mission" className="bg-gradient-to-br from-[var(--color-navy-900)] to-[var(--color-navy-800)] py-[46px] border-y border-[var(--color-border-gold)]/50">
+    <section id="mission" className="bg-gradient-to-br from-[var(--color-navy-900)] to-[var(--color-navy-800)] py-[46px] border-y border-[var(--color-border-gold)]/50 scroll-mt-32">
       <div className="max-w-[1440px] mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16">
         <div className="flex-shrink-0 w-[88px] h-[88px] md:w-[110px] md:h-[110px]">
           <motion.svg

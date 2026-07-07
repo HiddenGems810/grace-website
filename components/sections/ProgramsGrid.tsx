@@ -19,7 +19,7 @@ const PROGRAMS = [
 
 export function ProgramsGrid() {
   return (
-    <section id="programs" className="py-24 md:py-32 bg-white relative">
+    <section id="programs" className="py-24 md:py-32 bg-white relative scroll-mt-32">
       <div className="max-w-[1440px] mx-auto px-6">
         <ScrollReveal y={20} className="text-center mb-16">
           <div className="flex items-center justify-center gap-4 mb-4">
@@ -31,7 +31,7 @@ export function ProgramsGrid() {
           </div>
         </ScrollReveal>
 
-        <div id="residency">
+        <div id="residency" className="scroll-mt-32">
           <ScrollReveal isStaggerContainer staggerChildren={0.08} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
             {PROGRAMS.map((program) => (
               <ScrollReveal key={program} y={30} className="h-full">

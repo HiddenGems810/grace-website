@@ -52,7 +52,7 @@ function FormCard({
       action={`mailto:${email}?subject=${encodeURIComponent(subject)}`}
       method="post"
       encType="text/plain"
-      className="rounded-[14px] border border-[var(--color-gold-500)]/30 bg-white p-6 md:p-8 shadow-[var(--shadow-soft)]"
+      className="scroll-mt-32 rounded-[14px] border border-[var(--color-gold-500)]/30 bg-white p-6 md:p-8 shadow-[var(--shadow-soft)]"
     >
       <div className="mb-6 flex items-center gap-4 text-[var(--color-gold-500)]">
         {icon}
