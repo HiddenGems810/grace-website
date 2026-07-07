@@ -96,18 +96,18 @@ export function ProgramsGrid() {
                         
                         return (
                           <ScrollReveal key={index} y={20}>
-                            <div className="group relative flex items-center gap-6 md:gap-8 p-6 md:p-8 rounded-[24px] bg-white/40 border border-white/60 hover:border-white hover:bg-white/60 transition-all duration-500 overflow-hidden shadow-[var(--shadow-soft)] hover:shadow-xl hover:-translate-y-1">
+                            <div className="group relative flex items-center gap-6 md:gap-8 p-6 md:p-8 rounded-[24px] bg-white border border-[var(--color-navy-900)]/5 hover:border-[var(--color-navy-900)]/15 transition-all duration-500 overflow-hidden shadow-[0_8px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(0,23,47,0.08)] hover:-translate-y-1">
                               
                               {/* Hover Glow */}
-                              <div className="absolute inset-0 bg-gradient-to-r from-white/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                              <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-gold-500)]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                               
                               {/* Giant Background Number */}
-                              <span className="absolute -right-4 -bottom-8 font-display text-[100px] md:text-[140px] font-bold text-[var(--color-navy-900)]/5 group-hover:text-[var(--color-navy-900)]/10 transition-colors duration-500 pointer-events-none select-none">
+                              <span className="absolute -right-2 -bottom-6 font-display text-[100px] md:text-[140px] font-bold text-[var(--color-gold-500)]/10 group-hover:text-[var(--color-gold-500)]/20 transition-colors duration-500 pointer-events-none select-none">
                                 {number}
                               </span>
 
                               {/* Icon Container */}
-                              <div className="relative z-10 flex items-center justify-center w-14 h-14 md:w-16 md:h-16 shrink-0 rounded-2xl bg-[var(--color-navy-900)]/5 border border-[var(--color-navy-900)]/10 text-[var(--color-navy-900)] group-hover:scale-110 group-hover:bg-[var(--color-navy-900)] group-hover:text-white shadow-sm transition-all duration-500">
+                              <div className="relative z-10 flex items-center justify-center w-14 h-14 md:w-16 md:h-16 shrink-0 rounded-2xl bg-[var(--color-navy-900)]/5 border border-[var(--color-navy-900)]/10 text-[var(--color-navy-900)] group-hover:scale-110 group-hover:bg-[var(--color-navy-900)] group-hover:text-[var(--color-gold-400)] shadow-sm transition-all duration-500">
                                 <Icon className="w-6 h-6 md:w-7 md:h-7" strokeWidth={1.5} />
                               </div>
 
