@@ -9,7 +9,7 @@ const email = "dominque@grace101ilh.org";
 
 export function ContactForms() {
   return (
-    <section id="contact" className="bg-[var(--color-warm-white)] py-24 md:py-32 scroll-mt-32 relative overflow-hidden">
+    <section id="contact" className="bg-[var(--color-warm-white)] py-16 md:py-24 scroll-mt-32 relative overflow-hidden">
       
       {/* Decorative ambient light */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[var(--color-gold-400)]/5 blur-3xl rounded-full pointer-events-none" />
@@ -18,7 +18,7 @@ export function ContactForms() {
       <div className="max-w-[1200px] mx-auto px-6 relative z-10">
         
         {/* Section Header */}
-        <ScrollReveal isStaggerContainer className="text-center mb-16 md:mb-24">
+        <ScrollReveal isStaggerContainer className="text-center mb-10 md:mb-14">
           <ScrollReveal y={20}>
             <div className="inline-flex items-center justify-center gap-4 mb-6">
               <div className="h-[1px] w-8 md:w-12 bg-gradient-to-r from-transparent to-[var(--color-gold-500)]" />
@@ -102,16 +102,16 @@ function FormCard({
     <form
       id={id}
       onSubmit={handleSubmit}
-      className="h-full flex flex-col scroll-mt-32 rounded-[32px] border border-[var(--color-navy-900)]/5 bg-white p-8 md:p-12 shadow-[0_8px_30px_rgba(0,23,47,0.06)] hover:shadow-[0_20px_40px_rgba(0,23,47,0.12)] transition-shadow duration-500"
+      className="h-full flex flex-col scroll-mt-32 rounded-[32px] border border-[var(--color-navy-900)]/5 bg-white p-6 md:p-8 shadow-[0_8px_30px_rgba(0,23,47,0.06)] hover:shadow-[0_20px_40px_rgba(0,23,47,0.12)] transition-shadow duration-500"
     >
-      <div className="mb-8 flex items-center gap-5">
+      <div className="mb-6 flex items-center gap-5">
         <div className="flex items-center justify-center w-14 h-14 md:w-16 md:h-16 shrink-0 rounded-2xl bg-[var(--color-gold-500)]/10 text-[var(--color-gold-400)]">
           {icon}
         </div>
         <h3 className="font-display text-[32px] md:text-[36px] text-[var(--color-navy-900)] leading-tight">{title}</h3>
       </div>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
         <label className="font-sans text-[12px] font-bold uppercase tracking-[0.1em] text-[var(--color-navy-900)]/80">
           Name
           <input name="name" required className="mt-3 w-full rounded-[16px] border border-[var(--color-navy-900)]/10 bg-[var(--color-warm-white)]/50 px-5 py-4 text-[15px] font-normal normal-case tracking-normal text-[var(--color-navy-900)] placeholder-[var(--color-navy-900)]/30 focus:border-[var(--color-gold-400)] focus:outline-none focus:ring-1 focus:ring-[var(--color-gold-400)] transition-all" />
@@ -122,12 +122,12 @@ function FormCard({
         </label>
       </div>
       
-      <label className="mb-5 block font-sans text-[12px] font-bold uppercase tracking-[0.1em] text-[var(--color-navy-900)]/80">
+      <label className="mb-4 block font-sans text-[12px] font-bold uppercase tracking-[0.1em] text-[var(--color-navy-900)]/80">
         Email
         <input name="email" type="email" required className="mt-3 w-full rounded-[16px] border border-[var(--color-navy-900)]/10 bg-[var(--color-warm-white)]/50 px-5 py-4 text-[15px] font-normal normal-case tracking-normal text-[var(--color-navy-900)] placeholder-[var(--color-navy-900)]/30 focus:border-[var(--color-gold-400)] focus:outline-none focus:ring-1 focus:ring-[var(--color-gold-400)] transition-all" />
       </label>
       
-      <label className="mb-8 block font-sans text-[12px] font-bold uppercase tracking-[0.1em] text-[var(--color-navy-900)]/80 flex-grow">
+      <label className="mb-6 block font-sans text-[12px] font-bold uppercase tracking-[0.1em] text-[var(--color-navy-900)]/80 flex-grow">
         {messageLabel}
         <textarea name="message" rows={4} required className="mt-3 w-full h-[calc(100%-2rem)] min-h-[120px] rounded-[16px] border border-[var(--color-navy-900)]/10 bg-[var(--color-warm-white)]/50 px-5 py-4 text-[15px] font-normal normal-case tracking-normal text-[var(--color-navy-900)] placeholder-[var(--color-navy-900)]/30 focus:border-[var(--color-gold-400)] focus:outline-none focus:ring-1 focus:ring-[var(--color-gold-400)] transition-all resize-none" />
       </label>
