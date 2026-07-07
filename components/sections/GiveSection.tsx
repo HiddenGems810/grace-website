@@ -2,8 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { DoorOpen, Gift, Heart } from "lucide-react";
+import { Gift, Heart, ShieldCheck } from "lucide-react";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 export function GiveSection() {
@@ -17,8 +16,8 @@ export function GiveSection() {
         }}
       />
 
-      <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center relative z-10">
-        <ScrollReveal isStaggerContainer>
+      <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_520px] gap-12 lg:gap-20 items-center relative z-10">
+        <ScrollReveal isStaggerContainer className="max-w-[660px]">
           <ScrollReveal y={20}>
             <span className="block text-[13px] font-sans font-bold uppercase tracking-[0.16em] text-[var(--color-gold-500)] mb-4">
               Ways to Give
@@ -39,53 +38,37 @@ export function GiveSection() {
 
           <ScrollReveal y={20}>
             <div className="flex flex-col sm:flex-row items-center gap-4">
-              <a href="https://www.zeffy.com/en-US/donation-form/where-grace-meets-new-beginnings-help-change-lives" className="inline-flex w-full sm:w-auto items-center justify-center gap-2 px-6 py-3.5 rounded-[14px] font-sans font-semibold text-[15px] md:text-[16px] tracking-wide bg-[var(--color-gold-500)] text-white hover:bg-[var(--color-gold-400)] shadow-[var(--shadow-gold)] transition-all duration-300">
+              <a href="https://www.zeffy.com/en-US/donation-form/where-grace-meets-new-beginnings-help-change-lives" className="inline-flex w-full sm:w-auto items-center justify-center gap-2 px-7 py-4 rounded-[14px] font-sans font-semibold text-[15px] md:text-[16px] tracking-wide bg-[var(--color-gold-500)] text-white hover:bg-[var(--color-gold-400)] shadow-[var(--shadow-gold)] transition-all duration-300">
                 <Heart className="w-5 h-5" />
                 Donate Now
               </a>
-              <a href="https://www.amazon.com/registries/gl/guest-view/3TKG27SEMJBD8?ref_=cm_sw_r_mwn_ggr-subnav-share_BPQF7FCG9BBV90GXGSNH&language=en-US" className="inline-flex w-full sm:w-auto items-center justify-center gap-2 px-6 py-3.5 rounded-[14px] font-sans font-semibold text-[15px] md:text-[16px] tracking-wide bg-transparent border border-[var(--color-border-gold)] text-[var(--color-navy-900)] hover:border-[var(--color-gold-400)] hover:bg-[var(--color-warm-white)] transition-all duration-300">
+              <a href="https://www.amazon.com/registries/gl/guest-view/3TKG27SEMJBD8?ref_=cm_sw_r_mwn_ggr-subnav-share_BPQF7FCG9BBV90GXGSNH&language=en-US" className="inline-flex w-full sm:w-auto items-center justify-center gap-2 px-7 py-4 rounded-[14px] font-sans font-semibold text-[15px] md:text-[16px] tracking-wide bg-white border border-[var(--color-border-gold)] text-[var(--color-navy-900)] hover:border-[var(--color-gold-400)] hover:bg-[var(--color-warm-white)] transition-all duration-300">
                 <Gift className="w-5 h-5" />
                 Amazon Wishlist
               </a>
             </div>
+            <div className="mt-6 flex items-start gap-3 rounded-[14px] border border-[var(--color-border-gold)] bg-[var(--color-warm-white)] px-4 py-3 text-[14px] leading-relaxed text-[var(--color-text)]">
+              <ShieldCheck className="mt-0.5 h-5 w-5 shrink-0 text-[var(--color-gold-500)]" />
+              <span>Choose the giving option that feels most comfortable: a secure online gift, household essentials, or a direct scan-to-support option.</span>
+            </div>
           </ScrollReveal>
         </ScrollReveal>
 
-        <ScrollReveal y={40} duration={0.8} delay={0.2} className="relative mx-auto w-full max-w-[440px]">
-          <div className="absolute inset-0 translate-x-4 translate-y-4 bg-[var(--color-gold-400)] rounded-2xl opacity-20 border border-[var(--color-gold-500)]" />
-
-          <div className="relative bg-white border border-[var(--color-border-gold)] rounded-2xl p-6 md:p-12 shadow-[var(--shadow-navy)] flex flex-col items-center text-center">
-            <motion.div
-              className="relative w-20 h-16 mb-6"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.6 }}
-            >
-              <DoorOpen className="absolute left-1/2 top-1/2 w-14 h-14 -translate-x-1/2 -translate-y-1/2 text-[var(--color-navy-900)]" strokeWidth={1.5} />
-              <motion.div
-                className="absolute bottom-3 left-2 w-3 h-8 rounded-full bg-[var(--color-gold-500)]"
-                variants={{
-                  hidden: { x: 0, opacity: 0 },
-                  visible: { x: 38, opacity: 1, transition: { duration: 1.2, ease: "easeInOut" } },
-                }}
-              />
-            </motion.div>
-
-            <h3 className="font-display font-semibold text-[26px] text-[var(--color-navy-900)] leading-tight mb-3">
+        <ScrollReveal y={40} duration={0.8} delay={0.2} className="mx-auto w-full max-w-[520px]">
+          <div className="relative overflow-hidden rounded-[18px] border border-[var(--color-border-gold)] bg-[var(--color-warm-white)] p-5 shadow-[var(--shadow-soft)]">
+            <div className="rounded-[14px] bg-white p-6 md:p-8 text-center">
+              <h3 className="font-display font-semibold text-[30px] text-[var(--color-navy-900)] leading-tight mb-6">
               Scan to Support
-            </h3>
+              </h3>
 
-            <p className="font-sans text-[15px] text-[var(--color-text)] leading-relaxed mb-8 max-w-[280px]">
-              Help provide safe housing, stability, and opportunity. Scan below to support Grace 101.
-            </p>
-
-            <div className="relative w-full max-w-[280px] aspect-square rounded-xl overflow-hidden border border-[var(--color-border-gold)]/50 shadow-sm bg-white transition-transform hover:scale-105 duration-300">
-              <Image
-                src="/images/zelle-qr.png"
-                alt="Send Money with Zelle QR Code"
-                fill
-                className="object-contain p-2"
-              />
+              <div className="mx-auto relative w-full max-w-[320px] aspect-square rounded-[16px] overflow-hidden border border-[var(--color-border-gold)]/60 shadow-sm bg-white">
+                <Image
+                  src="/images/zelle-qr.png"
+                  alt="Send Money with Zelle QR Code"
+                  fill
+                  className="object-contain p-3"
+                />
+              </div>
             </div>
           </div>
         </ScrollReveal>

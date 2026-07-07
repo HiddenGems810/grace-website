@@ -7,6 +7,20 @@ import { ClipboardList } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
 export function FounderSection() {
+  const handleWaitlistSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+    const body = [
+      "This is a test email from TAGDesigns Multimedia Group",
+      "",
+      `Name: ${formData.get("name") || ""}`,
+      `Phone: ${formData.get("phone") || ""}`,
+      `Email: ${formData.get("email") || ""}`,
+    ].join("\n");
+
+    window.location.href = `mailto:dominque@grace101ilh.org?subject=${encodeURIComponent("Grace 101 Waitlist Request")}&body=${encodeURIComponent(body)}`;
+  };
+
   return (
     <section className="bg-[var(--color-warm-white)] pb-24 md:pb-32 overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6">
@@ -52,7 +66,10 @@ export function FounderSection() {
               Dominque has a heart for uplifting others and a passion for creating a safe space where women feel supported, valued, and encouraged. Her vision is rooted in compassion, grace, and the belief that every woman deserves the opportunity to rediscover her strength, embrace new possibilities, and build a brighter future.
             </p>
 
-            <blockquote className="font-script text-center text-[28px] md:text-[34px] text-[var(--color-gold-500)] leading-[1.2]">
+            <blockquote
+              className="text-center text-[29px] md:text-[34px] text-[var(--color-gold-400)] leading-[1.28]"
+              style={{ fontFamily: "var(--font-quote-script)" }}
+            >
               &quot;When women are met with grace instead of judgment, hope has room to grow.&quot;
             </blockquote>
           </motion.div>
@@ -76,11 +93,10 @@ export function FounderSection() {
 
             <form
               id="waitlist"
-              action="mailto:dominque@grace101ilh.org?subject=Grace%20101%20Waitlist%20Request"
-              method="post"
-              encType="text/plain"
+              onSubmit={handleWaitlistSubmit}
               className="w-full space-y-3"
             >
+              <input type="hidden" name="source" defaultValue="This is a test email from TAGDesigns Multimedia Group" />
               <input name="name" required placeholder="Name" className="w-full rounded-[10px] border border-[var(--color-navy-900)]/20 px-4 py-3 text-[14px] text-[var(--color-navy-900)]" />
               <input name="phone" required placeholder="Phone" className="w-full rounded-[10px] border border-[var(--color-navy-900)]/20 px-4 py-3 text-[14px] text-[var(--color-navy-900)]" />
               <input name="email" type="email" placeholder="Email" className="w-full rounded-[10px] border border-[var(--color-navy-900)]/20 px-4 py-3 text-[14px] text-[var(--color-navy-900)]" />

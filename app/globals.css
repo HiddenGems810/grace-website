@@ -23,6 +23,7 @@
   --font-serif: var(--font-serif);
   --font-sans: var(--font-sans);
   --font-script: var(--font-script);
+  --font-quote-script: var(--font-quote-script);
 
   --radius-sm: 8px;
   --radius-md: 14px;

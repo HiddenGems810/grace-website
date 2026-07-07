@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Cormorant_Garamond, Playfair_Display, Great_Vibes } from "next/font/google";
+import { Inter, Cormorant_Garamond, Playfair_Display, Great_Vibes, Parisienne } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -24,6 +24,12 @@ const script = Great_Vibes({
   weight: ["400"],
 });
 
+const quoteScript = Parisienne({
+  variable: "--font-quote-script",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
 export const metadata: Metadata = {
   title: "Grace 101 Independent Living Home | Safe Housing for Women in Houston",
   description: "Grace 101 Independent Living Home provides safe, supportive housing and life-enriching opportunities for women rebuilding their lives with dignity, stability, and hope.",
@@ -37,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${cormorant.variable} ${playfair.variable} ${script.variable} antialiased`}
+        className={`${inter.variable} ${cormorant.variable} ${playfair.variable} ${script.variable} ${quoteScript.variable} antialiased`}
       >
         {children}
       </body>

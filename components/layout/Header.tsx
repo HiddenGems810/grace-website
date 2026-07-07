@@ -50,14 +50,17 @@ export function Header() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-      className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 sm:px-6 pt-4 pointer-events-none"
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 flex justify-center pointer-events-none transition-all duration-500 px-0",
+        isScrolled ? "pt-0" : "pt-4"
+      )}
     >
       <div 
         className={cn(
-          "pointer-events-auto flex items-center justify-between transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] w-full max-w-[1440px]",
+          "pointer-events-auto flex items-center justify-between transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] w-full",
           isScrolled 
-            ? "bg-[var(--color-navy-900)]/70 backdrop-blur-2xl border border-white/10 shadow-[0_8px_32px_rgba(0,23,47,0.4)] rounded-full py-1.5 px-6 lg:px-8 mt-2" 
-            : "bg-transparent py-4 border-transparent"
+            ? "bg-[var(--color-navy-900)] border-b border-white/10 shadow-[0_8px_32px_rgba(0,23,47,0.28)] py-1.5 px-6 lg:px-10" 
+            : "bg-transparent py-4 px-6 lg:px-10 border-transparent"
         )}
       >
         {/* Left: Logo */}
