@@ -78,7 +78,7 @@ export function AboutSection() {
                   Our home provides a stable environment where women can build confidence, strengthen life skills, and move toward independence.
                 </p>
                 <p className="font-sans text-[16px] md:text-[18px] text-[var(--color-text)] leading-[1.8] text-pretty">
-                  With <span className="font-script text-[32px] text-[var(--color-gold-500)] leading-none align-middle mx-1">grace</span>, support, and opportunity, every new beginning starts here.
+                  With <span className="font-script text-[32px] text-[var(--color-gold-500)] leading-none align-middle mx-1">Grace</span>, support, and opportunity, every new beginning starts here.
                 </p>
               </div>
             </ScrollReveal>
