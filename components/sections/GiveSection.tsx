@@ -17,7 +17,7 @@ export function GiveSection() {
       />
 
       <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_520px] gap-12 lg:gap-20 items-center relative z-10">
-        <ScrollReveal isStaggerContainer className="max-w-[660px]">
+        <ScrollReveal isStaggerContainer className="mx-auto max-w-[660px] text-center lg:mx-0 lg:text-left">
           <ScrollReveal y={20}>
             <span className="block text-[13px] font-sans font-bold uppercase tracking-[0.16em] text-[var(--color-gold-500)] mb-4">
               Ways to Give
@@ -37,7 +37,7 @@ export function GiveSection() {
           </ScrollReveal>
 
           <ScrollReveal y={20}>
-            <div className="flex flex-col sm:flex-row items-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 lg:justify-start">
               <a href="https://www.zeffy.com/en-US/donation-form/where-grace-meets-new-beginnings-help-change-lives" className="inline-flex w-full sm:w-auto items-center justify-center gap-2 px-7 py-4 rounded-[14px] font-sans font-semibold text-[15px] md:text-[16px] tracking-wide bg-[var(--color-gold-500)] text-white hover:bg-[var(--color-gold-400)] shadow-[var(--shadow-gold)] transition-all duration-300">
                 <Heart className="w-5 h-5" />
                 Donate Now
@@ -47,7 +47,7 @@ export function GiveSection() {
                 Amazon Wishlist
               </a>
             </div>
-            <div className="mt-6 flex w-full max-w-[420px] items-start gap-3 rounded-[14px] border border-[var(--color-border-gold)] bg-[var(--color-warm-white)] px-4 py-3 text-[14px] leading-relaxed text-[var(--color-text)]">
+            <div className="mx-auto mt-6 flex w-full max-w-[420px] items-start gap-3 rounded-[14px] border border-[var(--color-border-gold)] bg-[var(--color-warm-white)] px-4 py-3 text-left text-[14px] leading-relaxed text-[var(--color-text)] lg:mx-0">
               <ShieldCheck className="mt-0.5 h-5 w-5 shrink-0 text-[var(--color-gold-500)]" />
               <span>Choose the giving option that feels most comfortable: a secure online gift, household essentials, or a direct scan-to-support option.</span>
             </div>
