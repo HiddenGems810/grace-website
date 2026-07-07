@@ -63,7 +63,7 @@ export function AboutSection() {
           </ScrollReveal>
 
           <ScrollReveal y={20}>
-            <Button variant="primary" arrow onClick={() => document.getElementById("residency")?.scrollIntoView({ behavior: "smooth" })}>
+            <Button variant="primary" arrow onClick={() => document.getElementById("programs")?.scrollIntoView({ behavior: "smooth" })}>
               Learn More About Our Home
             </Button>
           </ScrollReveal>

@@ -103,11 +103,6 @@ export function Footer() {
                   A safe place. A fresh start.<br />A brighter future.
                 </span>
               </div>
-            </div>
-
-            <a href="mailto:dominque@grace101ilh.org" className="w-full bg-[var(--color-gold-500)] hover:bg-[var(--color-gold-400)] text-[var(--color-navy-900)] font-bold text-[13px] tracking-widest uppercase rounded-full py-3 text-center transition-colors duration-300">
-              Contact Grace 101
-            </a>
           </div>
         </div>
 
