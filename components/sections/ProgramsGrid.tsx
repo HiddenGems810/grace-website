@@ -19,16 +19,16 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { motion, AnimatePresence } from "framer-motion";
 
 const PROGRAMS = [
-  { text: "Safe, fully furnished accommodations", icon: BedDouble },
-  { text: "All utilities included", icon: Zap },
-  { text: "High-speed Wi-Fi", icon: Wifi },
-  { text: "Computer access", icon: Monitor },
-  { text: "Laundry facilities", icon: Shirt },
-  { text: "Secure, keyed bedroom locks", icon: Key },
-  { text: "24/7 security camera monitoring in common areas", icon: ShieldCheck },
-  { text: "Access to shared kitchen and living spaces", icon: Coffee },
-  { text: "Community support", icon: HeartHandshake },
-  { text: "Life skills development opportunities", icon: BookOpen },
+  { text: "Safe, Fully Furnished Accommodations", icon: BedDouble },
+  { text: "All Utilities Included", icon: Zap },
+  { text: "High-Speed Wi-Fi", icon: Wifi },
+  { text: "Computer Access", icon: Monitor },
+  { text: "Laundry Facilities", icon: Shirt },
+  { text: "Secure, Keyed Bedroom Locks", icon: Key },
+  { text: "24/7 Security Camera Monitoring in Common Areas", icon: ShieldCheck },
+  { text: "Access to Shared Kitchen and Living Spaces", icon: Coffee },
+  { text: "Community Support", icon: HeartHandshake },
+  { text: "Life Skills Development Opportunities", icon: BookOpen },
 ];
 
 export function ProgramsGrid() {
