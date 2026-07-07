@@ -31,7 +31,7 @@ export function FounderSection() {
             className="w-full lg:w-[38%] relative h-[300px] md:h-[400px] lg:h-auto border-b lg:border-b-0 lg:border-r border-[var(--color-gold-500)]/40 bg-[#f8f0ea]"
           >
             <Image
-              src="/images/profile image.png"
+              src="/images/dominque_brown.png"
               alt="Dominque Brown, Founder"
               fill
               sizes="(max-width: 1024px) 100vw, 38vw"
