@@ -15,6 +15,7 @@ export function Logo({ className }: LogoProps) {
         src="/images/logo-colored.png" 
         alt="Grace 101 Independent Living Home Logo" 
         fill
+        sizes="(max-width: 768px) 120px, 160px"
         className="object-contain"
         priority
       />

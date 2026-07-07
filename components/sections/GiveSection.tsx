@@ -86,6 +86,7 @@ export function GiveSection() {
                     src="/images/zelle-qr.png"
                     alt="Send Money with Zelle QR Code"
                     fill
+                    sizes="360px"
                     className="object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                 </div>

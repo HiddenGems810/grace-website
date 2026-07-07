@@ -91,6 +91,7 @@ export function ProgramsGrid() {
                 src="/images/about_living_room.png" 
                 alt="Residency Living Space" 
                 fill 
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-navy-900)]/40 to-transparent mix-blend-overlay" />

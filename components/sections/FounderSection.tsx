@@ -36,6 +36,8 @@ export function FounderSection() {
               fill
               sizes="(max-width: 1024px) 100vw, 38vw"
               className="object-cover object-top"
+              priority
+              loading="eager"
             />
           </motion.div>
 
