@@ -72,13 +72,13 @@ export function AboutSection() {
             <ScrollReveal y={20}>
               <div className="pl-6 md:pl-8 border-l-2 border-[var(--color-gold-400)]/40 mb-10 flex flex-col space-y-4">
                 <p className="font-sans text-[16px] md:text-[18px] text-[var(--color-text)] leading-[1.8] text-pretty">
-                  At <span className="font-script text-[32px] text-[var(--color-gold-500)] leading-none align-middle mx-1">Grace</span> 101 Independent Living Home, we believe every woman deserves a safe, supportive place to grow.
+                  At <span className="font-script text-[32px] text-[var(--color-gold-500)] leading-none align-middle mx-1">Grace</span> 101 Independent Living Home, we welcome women from all walks of life. Whether you are navigating the transition from military service, healing from an abusive relationship, recovering from substance use, or simply facing a difficult season, you deserve a safe place to land.
                 </p>
                 <p className="font-sans text-[16px] md:text-[18px] text-[var(--color-text)] leading-[1.8] text-pretty">
-                  Our home provides a stable environment where women can build confidence, strengthen life skills, and move toward independence.
+                  Our home provides a stable, compassionate environment designed to help you rediscover your confidence, strengthen essential life skills, and move steadily toward true independence.
                 </p>
                 <p className="font-sans text-[16px] md:text-[18px] text-[var(--color-text)] leading-[1.8] text-pretty">
-                  With <span className="font-script text-[32px] text-[var(--color-gold-500)] leading-none align-middle mx-1">Grace</span>, support, and opportunity, every new beginning starts here.
+                  With <span className="font-script text-[32px] text-[var(--color-gold-500)] leading-none align-middle mx-1">Grace</span>, unwavering support, and renewed opportunity, your next chapter begins here.
                 </p>
               </div>
             </ScrollReveal>
