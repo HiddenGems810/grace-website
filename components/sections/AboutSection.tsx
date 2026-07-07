@@ -49,16 +49,6 @@ export function AboutSection() {
             <div className="absolute inset-0 ring-1 ring-inset ring-white/20 rounded-[24px]" />
           </ScrollReveal>
 
-          {/* Floating Badge */}
-          <ScrollReveal y={30} delay={0.3} className="absolute -bottom-8 -right-4 md:-right-8 lg:-right-12 bg-white/95 backdrop-blur-md p-5 md:p-6 rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.12)] border border-[var(--color-gold-400)]/20 flex items-center gap-4 max-w-[280px]">
-            <div className="w-12 h-12 rounded-full bg-[var(--color-gold-400)]/15 flex items-center justify-center shrink-0">
-               <Heart className="w-6 h-6 text-[var(--color-gold-600)] fill-[var(--color-gold-500)]" />
-            </div>
-            <div>
-              <p className="font-display text-[18px] text-[var(--color-navy-900)] leading-tight mb-1">Empowering Women</p>
-              <p className="font-sans text-[13px] text-[var(--color-text)] leading-snug">A safe space to heal, grow, and rebuild</p>
-            </div>
-          </ScrollReveal>
         </div>
 
         {/* Right Side: Text & Content */}
@@ -91,11 +81,6 @@ export function AboutSection() {
               </div>
             </ScrollReveal>
 
-            <ScrollReveal y={20}>
-              <Button variant="primary" arrow onClick={() => document.getElementById("programs")?.scrollIntoView({ behavior: "smooth" })}>
-                Learn More About Our Home
-              </Button>
-            </ScrollReveal>
           </ScrollReveal>
         </div>
       </div>
