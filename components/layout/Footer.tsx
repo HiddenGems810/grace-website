@@ -25,14 +25,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 border-b border-white/10 pb-16">
           
           {/* Column 1: Brand */}
-          <div className="flex flex-col items-start space-y-6">
+          <div className="flex flex-col items-center md:items-start space-y-6">
             <Logo className="w-[170px] h-[170px]" />
           </div>
 
           {/* Column 2: Navigation */}
-          <div className="flex flex-col space-y-6 lg:pl-8">
+          <div className="flex flex-col items-center md:items-start space-y-6 lg:pl-8 text-center md:text-left">
             <h3 className="font-serif text-2xl text-white">Explore</h3>
-            <nav className="flex flex-col space-y-3">
+            <nav className="flex flex-col items-center md:items-start space-y-3">
               {NAV_LINKS.map((link) => (
                 <Link
                   key={link.name}
@@ -47,30 +47,30 @@ export function Footer() {
           </div>
 
           {/* Column 3: Contact */}
-          <div className="flex flex-col space-y-6">
+          <div className="flex flex-col items-center md:items-start space-y-6 text-center md:text-left">
             <h3 className="font-serif text-2xl text-white">Contact Us</h3>
-            <div className="flex flex-col space-y-4 text-[15px] text-white/70">
-              <a href="#" className="flex items-start gap-3 hover:text-white transition-colors">
+            <div className="flex flex-col items-center md:items-start space-y-4 text-[15px] text-white/70">
+              <a href="#" className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3 hover:text-white transition-colors">
                 <MapPin className="w-5 h-5 text-[var(--color-gold-400)] shrink-0" />
-                <span>P.O. Box 60194<br />Houston, TX 77205</span>
+                <span className="text-center md:text-left">P.O. Box 60194<br className="hidden md:block" /> Houston, TX 77205</span>
               </a>
-              <a href="tel:+13468808696" className="flex items-center gap-3 hover:text-white transition-colors">
+              <a href="tel:+13468808696" className="flex flex-col md:flex-row items-center gap-2 md:gap-3 hover:text-white transition-colors">
                 <Phone className="w-5 h-5 text-[var(--color-gold-400)] shrink-0" />
                 <span>346.880.8696</span>
               </a>
-              <a href="mailto:dominque@grace101ilh.org" className="flex items-center gap-3 hover:text-white transition-colors">
+              <a href="mailto:dominque@grace101ilh.org" className="flex flex-col md:flex-row items-center gap-2 md:gap-3 hover:text-white transition-colors">
                 <Mail className="w-5 h-5 text-[var(--color-gold-400)] shrink-0" />
                 <span>dominque@grace101ilh.org</span>
               </a>
-              <a href="https://grace101ilh.org" className="flex items-center gap-3 hover:text-white transition-colors">
+              <a href="https://grace101ilh.org" className="flex flex-col md:flex-row items-center gap-2 md:gap-3 hover:text-white transition-colors">
                 <Home className="w-5 h-5 text-[var(--color-gold-400)] shrink-0" />
                 <span>grace101ilh.org</span>
               </a>
             </div>
             
             {/* Popl Digital Business Card */}
-            <div className="pt-2 flex flex-col items-center justify-center gap-3 w-full max-w-[200px] mx-auto md:mx-0">
-              <span className="font-sans text-[11px] text-[var(--color-gold-400)] tracking-widest uppercase font-bold text-center">
+            <div className="pt-2 flex flex-col items-center md:items-start justify-center gap-3 w-full max-w-[200px] mx-auto md:mx-0">
+              <span className="font-sans text-[11px] text-[var(--color-gold-400)] tracking-widest uppercase font-bold text-center md:text-left">
                 Scan for Digital Business Card
               </span>
               <div className="relative w-28 h-28 bg-white rounded-xl overflow-hidden p-1.5 transition-transform hover:-translate-y-1 duration-300">
@@ -85,7 +85,7 @@ export function Footer() {
           </div>
 
           {/* Column 4: Quote & Promise */}
-          <div className="flex flex-col space-y-6">
+          <div className="flex flex-col items-center md:items-start space-y-6">
             <blockquote
               className="text-[22px] md:text-[24px] lg:text-[26px] text-[var(--color-gold-400)] leading-[1.3] text-center"
               style={{ fontFamily: "var(--font-quote-script)" }}
@@ -95,14 +95,14 @@ export function Footer() {
               <span className="block">it never has to define her future.&quot;</span>
             </blockquote>
 
-            <div className="flex items-start gap-3 w-full max-w-[360px] border border-[var(--color-gold-500)]/30 rounded-xl p-5 bg-white/5 backdrop-blur-sm">
-              <Heart className="w-5 h-5 text-[var(--color-gold-400)] mt-1 flex-shrink-0" />
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-3 w-full max-w-[360px] mx-auto md:mx-0 border border-[var(--color-gold-500)]/30 rounded-xl p-5 bg-white/5 backdrop-blur-sm">
+              <Heart className="w-5 h-5 text-[var(--color-gold-400)] md:mt-1 flex-shrink-0" />
+              <div className="flex flex-col items-center md:items-start">
                 <span className="font-sans text-[11px] text-[var(--color-gold-400)] tracking-widest uppercase font-bold mb-1">
                   Our Promise
                 </span>
                 <span className="font-serif text-[16px] md:text-[17px] text-white leading-tight">
-                  Grace, Dignity and Support<br />for every New Beginning
+                  Grace, Dignity and Support<br className="hidden md:block" /> for every New Beginning
                 </span>
               </div>
             </div>
