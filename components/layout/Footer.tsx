@@ -87,7 +87,7 @@ export function Footer() {
           {/* Column 4: Quote & Promise */}
           <div className="flex flex-col space-y-6">
             <blockquote
-              className="text-[24px] md:text-[28px] text-[var(--color-gold-400)] leading-[1.28]"
+              className="text-[24px] md:text-[28px] text-[var(--color-gold-400)] leading-[1.28] text-center"
               style={{ fontFamily: "var(--font-quote-script)" }}
             >
               &quot;Grace reminds every woman that her past may shape her story, but it never has to define her future.&quot;
