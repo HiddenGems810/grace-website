@@ -113,13 +113,13 @@ export function Footer() {
         <div className="flex flex-col lg:flex-row items-center justify-between mt-8 text-[13px] text-white/50 font-sans gap-4">
           <p>© 2026 Grace 101 Independent Living Home. All Rights Reserved.</p>
           <div className="flex items-center flex-wrap justify-center gap-4 sm:gap-6">
-            <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <span className="hidden sm:inline w-1 h-1 rounded-full bg-white/20"></span>
-            <Link href="#" className="hover:text-white transition-colors">Terms of Use</Link>
+            <Link href="/terms-of-use" className="hover:text-white transition-colors">Terms of Use</Link>
             <span className="hidden sm:inline w-1 h-1 rounded-full bg-white/20"></span>
-            <span className="flex items-center gap-2 hover:text-white transition-colors cursor-pointer">
+            <Link href="/equal-housing" className="flex items-center gap-2 hover:text-white transition-colors">
               Equal Housing Opportunity <Home className="w-[14px] h-[14px]" />
-            </span>
+            </Link>
           </div>
         </div>
       </div>
