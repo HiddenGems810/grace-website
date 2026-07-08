@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
 };
 
-const EFFECTIVE_DATE = "July 1, 2025";
+const EFFECTIVE_DATE = "July 1, 2026";
 
 const sections = [
   {
